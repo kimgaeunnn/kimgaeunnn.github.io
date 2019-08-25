@@ -4,11 +4,7 @@ title:  "Preventing Timing Problems When Using Closures"
 date:   2019-08-25 18:56:50 +0530
 categories: Programming Swift
 ---
-
-# Preventing Timing Problems When Using Closures
-
 Closure를 실행하는 여러개의 API를 호출했을때, App에 무슨일 이 생길까요? Closure를 사용했을 때 생길 수 있는 Timing 문제와 해결방법에 대해 알아보겠습니다 😎 
-
 
 
 ## Overview
