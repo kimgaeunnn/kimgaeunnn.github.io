@@ -130,5 +130,4 @@ class SomeClass: SomeSuperClass, FirstProtocol, AnotherProtocol {
 
 ## 참고
 
-[docs.swift.org (5.1)](
-
+[docs.swift.org (5.1)](https://docs.swift.org/swift-book/LanguageGuide/Subscripts.htmll)
