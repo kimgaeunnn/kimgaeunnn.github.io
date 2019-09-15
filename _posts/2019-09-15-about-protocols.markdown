@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Swift Protocol에 대"
+title:  "Swift Protocol에 대하여"
 date:   2019-09-15 13:58:46 +0530
 categories: Programming Swift
 ---
