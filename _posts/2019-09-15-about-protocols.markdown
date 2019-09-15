@@ -32,7 +32,7 @@ Swift가 Protocol 지향 언어가 된 이유가 무엇일까요? 🤔
 #### Reference Type VS Value Type
 
 - Class 같은 Reference Type은 원본이 여기저기서 참조되고 MultiThread 환경에서는 값이 꼬이기 쉽고, 많은 자원을 소모합니다.
-  - 그래서 굳이 원본만 둘 필요가 없는 경우면, Enum/Struct 같은 ValueType을 사용하는것이 권장됩니다. 하지만, Value Type들은 상속이 안되기때문에 쓰기 불편합니다. 
+  - 그래서 굳이 원본만 둘 필요가 없는 경우면, Enum/Struct 같은 ValueType을 사용하는것이 권장됩니다. 하지만, Value Type들은 상속이 안되기 때문에 쓰기 불편합니다. 
     - 💡 Protocol을 이용하면 Enum, Struct 같은 **ValueType도 상속의 효과를 줄 수 있습니다.**
 
 
@@ -51,7 +51,7 @@ Swift가 Protocol 지향 언어가 된 이유가 무엇일까요? 🤔
 
 **특정 기능을 구현하기 위해 필요한  Method나 Property등의 Requirements의 청사진** 입니다.
 
-특정 기능을 위한 청사진이 무엇인지 알아보기위해, 예시로 Vehicle Protocol을 채택하는 자동차 Struct를 구현해보겠습니다.  
+특정 기능을 위한 청사진이 무엇인지 알아보기 위해, 예시로 Vehicle Protocol을 채택하는 자동차 Struct를 구현해 보겠습니다.  
 
 ```swift
 protocol Vehicle {
@@ -71,13 +71,13 @@ struct Car: Vehicle {
 }
 ```
 
-운송 수단은 속도, 색깔, 가격이라는 Property Requirements를 꼭 가져야한다는 내용의 Protocol을 선언하고, 운송수단 Protocol을 채택한 자동차 구조체에서는 해당 속성들의 값을 넣어서 구현해주고있습니다. 
+운송 수단은 속도, 색깔, 가격이라는 Property Requirements를 꼭 가져야한다는 내용의 Protocol을 선언하고, 운송수단 Protocol을 채택한 자동차 구조체에서는 해당 속성들의 값을 넣어서 구현해주고 있습니다. 
 
 
 
 - Class, Struct, Enumeration 등이 요구사항을 실제로 구현함으로써 protocol을 **adopt** 할 수 있고 
 
-- Protocol의 요구사항을 모두 만족한 type들은 해당 Protocol을 **conform** 했다고 할 수 있다. 
+- Protocol의 요구사항을 모두 만족한 type들은 해당 Protocol을 **conform** 했다고 합니다. 
 
 - Requirements들을 모두 만족하지 못하면 compile 에러를 내뱉습니다. 
 
